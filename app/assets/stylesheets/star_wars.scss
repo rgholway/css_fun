@@ -1,0 +1,63 @@
+.space {
+  background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2015/10/Seastrom_HeaderPhoto-2400x1200-900792609620.jpg');
+  height: 100%;
+  width: 100%;
+}
+
+.text-slide {
+  animation-duration: 110s;
+  animation-name: crawl;
+  animation-delay: 10s
+}
+
+.text-zoom {
+  animation-duration: 10s;
+  animation-name: zoom-out;
+}
+
+.text {
+  font-size: 50px;
+}
+
+.title {
+  font-size: 80px;
+  color: #F9F850;
+}
+
+@keyframes crawl {
+  from {
+    position: absolute;
+    left: 30%;
+    bottom: -300%;
+    width: 300%;
+    font-size: 200px;
+    color: #F9F850;
+  }
+
+  to {
+    position: absolute;
+    left: 30%;
+    bottom: 160%;
+    width: 300%;
+    font-size: 200px;
+    color: #F9F850;
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    font-size: 100px;
+    color: #F9F850;
+  }
+
+  to {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    font-size: 0px;
+    color: #F9F850;
+  }
+}
