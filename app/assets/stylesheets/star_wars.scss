@@ -2,28 +2,7 @@
   background-image: url('https://starwarsblog.starwars.com/wp-content/uploads/2015/10/Seastrom_HeaderPhoto-2400x1200-900792609620.jpg');
   height: 100%;
   width: 100%;
-}
-
-.loading_icons {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  color: white;
-  background: white;
-  width: 15%;
-  text-align: center;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  color: red;
-}
-
-a:visited {
-  color: purple;
+  overflow: hidden;
 }
 
 .text-slide {
