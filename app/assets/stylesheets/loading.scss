@@ -1,15 +1,59 @@
+.first_project {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 350px;
+  background: #701512;
+}
+
+.second_project {
+  position: absolute;
+  top: 350px;
+  left: 0%;
+  width: 100%;
+  height: 350px;
+  background: #725843;
+}
+
 .box {
   position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 300px;
+  top: 20%;
+  left: 40%;
+  width: 250px;
   height: 200px;
+  background: white;
+  overflow: hidden;
+}
+
+.star_wars_link {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: black;
+  background: white;
+  width: 30%;
+  text-align: center;
+  border: solid 1px yellow;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: black;
+  border: purple;
 }
 
 .loader {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 0%;
+  left: 10%;
   width: 200px;
   height: 200px;
   background: url('circle.png');
@@ -24,11 +68,62 @@
 
 .stool {
   position: absolute;
-  top: 26.5%;
-  left: 23.2%;
+  top: 22%;
+  left: 31%;
   height: 115px;
   width: 115px;
   background: url('stool.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.load_box {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  height: 3px;
+  width: 140px;
+  background: lightgray;
+  overflow: hidden;
+}
+
+.linked_in {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  height: 3px;
+  width: 55px;
+  background: blue;
+  animation: load 1.2s infinite;
+  animation-direction: alternate;
+}
+
+.linked_in_logo {
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  height: 50px;
+  width: 50px;
+  background: url('https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-square1-128.png');
+  background-size: cover;
+  border-radius: 5%;
+}
+
+.linked_in_box {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  height: 300px;
+  width: 450px;
+}
+
+@keyframes load {
+  from {
+    position: absolute;
+    left: 90%;
+  }
+  to {
+    position: absolute;
+    left:  -20%;
+  }
 }

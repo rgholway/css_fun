@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'homes#index'
-  get '/loading', to: 'homes#view'
+  root 'homes#view'
+  get '/star_wars', to: 'homes#index'
 end
