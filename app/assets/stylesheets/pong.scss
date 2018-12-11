@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+.third_project {
+  position: absolute;
+  top: 350px;
+  left: 0%;
+  width: 100%;
+  height: 350px;
+  background: #399AD3;
+}
+
+.pong_board {
+  position: absolute;
+  top: 15%;
+  left: 28%;
+  height: 250px;
+  width: 550px;
+  background: black;
+  overflow: hidden;
+}
+
+.black_abyss_right {
+  position: absolute;
+  top: 0%;
+  left: 95%;
+  height: 100%;
+  width: 5%;
+  background: black;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.black_abyss_left {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 5%;
+  background: black;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.middle_line {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 3px;
+  background: white;
+}
+
+.home_player {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  height: 40px;
+  width: 5px;
+  background: white;
+  animation-fill-mode: forwards;
+  animation: home_save_1 2s linear 10s 2 alternate, home_save_2 3s ease-in-out 21s 1;
+}
+
+.away_player {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  height: 40px;
+  width: 5px;
+  background: white;
+  animation-fill-mode: both;
+  animation: away_save_1 3s linear 3s 2 alternate, away_save_2 3s ease-in-out 15.5s 2 alternate;
+}
+
+.ball {
+  position: absolute;
+  top: 41%;
+  left: 5.8%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: first_ball;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.second_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: second_ball;
+  animation-duration: 3s;
+  animation-delay: 2.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.third_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: third_ball;
+  animation-duration: 1.5s;
+  animation-delay: 5.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.fourth_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: fourth_ball;
+  animation-duration: 3.5s;
+  animation-delay: 6.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.fifth_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: fifth_ball;
+  animation-duration: 3s;
+  animation-delay: 10.16s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.sixth_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: sixth_ball;
+  animation-duration: 3s;
+  animation-delay: 12.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.seventh_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: seventh_ball;
+  animation-duration: 3.5s;
+  animation-delay: 15.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.eigth_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: eigth_ball;
+  animation-duration: 1.5s;
+  animation-delay: 18.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.ninth_ball {
+  position: absolute;
+  top: -10%;
+  height: 8px;
+  width: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: ninth_ball;
+  animation-duration: 3.7s;
+  animation-delay: 19.9s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.goal {
+  position: absolute;
+  top: -50%;
+  left: 75%;
+  color: white;
+  font-size: 3vw;
+  animation: text_crawl 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 24s;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.refresh {
+  position: absolute;
+  top: 90%;
+  left: 43.7%;
+  height: 25px;
+  width: 100px;
+  background: darkblue;
+  text-align: center;
+}
+
+a:hover {
+  border: solid 1.5px white;
+}
+
+.text_color {
+  color: white;
+}
+
+@keyframes first_ball {
+  from {
+    position: absolute;
+    left: 5.8%;
+    top: 41%;
+  }
+
+  to {
+    position: absolute;
+    left: 50%;
+    top: -5%;
+  }
+}
+
+@keyframes second_ball {
+  from {
+    position: absolute;
+    left: 47.7%;
+    top: 0%;
+  }
+
+  to {
+    position: absolute;
+    left: 95%;
+    top: 80%;
+  }
+}
+
+@keyframes third_ball {
+  from {
+    position: absolute;
+    left: 95%;
+    top: 78%;
+  }
+
+  to {
+    position: absolute;
+    left: 75%;
+    top: 110%;
+  }
+}
+
+@keyframes fourth_ball {
+  from {
+    position: absolute;
+    left: 82%;
+    top: 98%;
+  }
+
+  to {
+    position: absolute;
+    left: 40%;
+    top: -5%;
+  }
+}
+
+@keyframes fifth_ball {
+  from {
+    position: absolute;
+    left: 40%;
+    top: 0%;
+  }
+
+  to {
+    position: absolute;
+    left: 0%;
+    top: 50%;
+  }
+}
+
+@keyframes sixth_ball {
+  from {
+    position: absolute;
+    left: 5%;
+    top: 42%;
+  }
+
+  to {
+    position: absolute;
+    left: 55%;
+    top: 100%;
+  }
+}
+
+@keyframes seventh_ball {
+  from {
+    position: absolute;
+    left: 53.5%;
+    top: 100%;
+  }
+
+  to {
+    position: absolute;
+    left: 100%;
+    top: 10%;
+  }
+}
+
+@keyframes eigth_ball {
+  from {
+    position: absolute;
+    left: 95%;
+    top: 25%;
+  }
+
+  to {
+    position: absolute;
+    left: 70%;
+    top: -5%;
+  }
+}
+
+@keyframes ninth_ball {
+  from {
+    position: absolute;
+    left: 72%;
+    top: 0%;
+  }
+
+  to {
+    position: absolute;
+    left: 0%;
+    top: 95%;
+  }
+}
+
+@keyframes away_save_1 {
+  from {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  to {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+  }
+}
+
+@keyframes away_save_2 {
+  from {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  to {
+    position: absolute;
+    top: 18%;
+    right: 5%;
+  }
+}
+
+@keyframes home_save_1 {
+  from {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  to {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+  }
+}
+
+@keyframes home_save_2 {
+  from {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  to {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+  }
+}
+
+@keyframes text_crawl {
+  from {
+    position: absolute;
+    top: -5%;
+    left: 65%;
+  }
+
+  to {
+    position: absolute;
+    top: 5%;
+    left: 65%;
+  }
+}

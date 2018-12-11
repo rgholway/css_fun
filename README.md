@@ -6,4 +6,6 @@ My first project explores text animations as I attempted to recreate the iconic 
 
 My second project was to create a loading Icon. One of my favorite sites is Barstool sports so I tried to make one that is similar to theirs.
 
-My third project was creating a loading Icon similar to LinkedIn's. 
+My third project was creating a loading Icon similar to LinkedIn's.
+
+My next project was creating an animation of a Pong Video game.   
