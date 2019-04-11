@@ -8,4 +8,6 @@ My second project was to create a loading Icon. One of my favorite sites is Bars
 
 My third project was creating a loading Icon similar to LinkedIn's.
 
-My next project was creating an animation of a Pong Video game.   
+My next project was creating an animation of a Pong Video game.
+
+Next, I did a typing animation. Shout out to  Geoff Graham and this CodePen for some of the code needed for this. https://css-tricks.com/snippets/css/typewriter-effect/   
